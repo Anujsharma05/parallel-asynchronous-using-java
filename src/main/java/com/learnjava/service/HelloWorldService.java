@@ -8,9 +8,13 @@ import static com.learnjava.util.LoggerUtil.log;
 public class HelloWorldService {
 
     public  String helloWorld() {
-        delay(1000);
+        delay(5000);
         log("inside helloWorld");
         return "hello world";
+    }
+
+    public String helloWorld_withSize(String input) {
+        return input.length() + " - " + input;
     }
 
     public  String hello() {
